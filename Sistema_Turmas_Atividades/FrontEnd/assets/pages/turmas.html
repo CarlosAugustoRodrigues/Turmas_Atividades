@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turmas</title>
+    <link rel="stylesheet" href="../css/style_turmas.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Olá, <span id="nome"></span></h1>
+
+        <div onclick="sair()">
+            <i class="bi bi-door-open"></i>
+            <span>Sair</span>
+        </div>
+    </header>
+
+    <main>
+
+        <div>
+            <button class="btn-add-turma" onclick="formCreateTurma()">
+                <i class="bi bi-plus-circle"></i>
+            </button>
+        </div>
+
+        <div class="div-cards-turmas">
+            <h1>Turmas</h1>
+
+            <div class="div-card">
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="../js/turmas.js"></script>
+<script src="../js/global.js"></script>
+</html>

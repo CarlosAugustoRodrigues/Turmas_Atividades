@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff);
+    text-decoration: none;
+}
+
+:root {
+    --ff: "Oswald", sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-inline: 10%;
+    width: 100%;
+    height: 10vh;
+
+    background: rgb(240, 240, 240);
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.75rem;
+
+    color: rgb(255, 100, 200);
+}
+
+header div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .5rem;
+    color: rgb(20, 100, 255);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+header div i {
+    font-size: 2.5rem;
+}
+
+main {
+    padding-inline: 10%;
+    padding-block: 3%;
+
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5rem;
+}
+
+main>div:nth-child(1) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-add-atividade {
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: auto;
+    height: auto;
+    font-size: 4.5rem;
+}
+
+.btn-add-atividade i {
+    color: rgb(20, 100, 255);
+    transition: .3s;
+}
+
+.btn-add-atividade i:hover {
+    color: rgb(255, 100, 200);
+}
+
+.div-cards-atividades {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 2rem;
+}
+
+.div-cards-atividades > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.div-cards-atividades > div:nth-child(1) a{
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: rgb(255, 30, 30);
+}
+
+.div-cards-atividades h1 {
+    color: rgb(20, 100, 255);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+.div-cards-atividades > div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card-atividade {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: white;
+    width: 360px;
+    height: 120px;
+
+    border-radius: 8px;
+    border: 3px solid rgb(20, 100, 255);
+
+    padding-top: 1.5rem;
+
+    transition: .3s;
+}
+
+.card-atividade:hover {
+    transform: scale(1.02);
+    border-color: rgb(255, 100, 200);
+}
+
+.card-atividade div:nth-child(1) {
+    display: flex;
+    gap: .5rem;
+
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.div-btn {
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    bottom: 0;
+}
+
+.div-btn button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: auto;
+    height: auto;
+    font-size: 2rem;
+
+    color: rgb(255, 30, 30);
+}
+
+@keyframes overlay {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes tiraroverlay {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

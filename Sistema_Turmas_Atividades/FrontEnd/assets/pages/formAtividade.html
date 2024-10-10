@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Atividade</title>
+    <link rel="stylesheet" href="../css/style_formTurma_Atividade.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Olá, <span id="nome"></span></h1>
+
+        <div onclick="sair()">
+            <i class="bi bi-door-open"></i>
+            <span>Sair</span>
+        </div>
+    </header>
+
+    <main>
+        <form id="form_atividade">
+            <div>
+            <input type="text" name="descricao" id="descricao" placeholder="Descrição Atividade" required/>
+            </div>
+    
+            <button type="submit">Criar Atividade</button>
+        </form>
+        <span><a href="./atividades.html">Voltar</a></span>
+    </main>
+</body>
+<script src="../js/createAtividade.js"></script>
+<script src="../js/global.js"></script>
+</html>
